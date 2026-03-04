@@ -52,6 +52,30 @@
       <img id="lightboxImg" src="" alt="Photo" />
     </div>
 
+    <!-- ========== VIDEO POPUP PLAYER ========== -->
+    <div
+      id="videoPopup"
+      class="video-popup"
+      onclick="handleVideoPopupClick(event)"
+    >
+      <div class="video-popup-modal">
+        <div class="video-popup-header">
+          <span class="video-popup-title" id="popupVideoTitle"></span>
+          <button class="video-popup-close" onclick="closeVideoPopup()">
+            ✕
+          </button>
+        </div>
+        <div class="video-popup-screen">
+          <video
+            id="popupVideo"
+            controls
+            controlsList="nodownload"
+            playsinline
+          ></video>
+        </div>
+      </div>
+    </div>
+
     <!-- Memory pages injected by JS -->
     <script src="journey.js"></script>
   </body>

@@ -4,61 +4,67 @@
 //    title   → heading on the card (use ❤ for the heart symbol)
 //    message → your text (\n = new line)
 //    photos  → array of image filenames inside that memory's folder
-//              Folder path: Memories/memory1/photo.jpg
-//              Leave as [] if no photos yet
+//    videos  → array of mp4 filenames inside that memory's folder
+//              Folder path: Images/Memories/memory1/
+//              Leave as [] if no photos/videos yet
 //
-//  FOLDER STRUCTURE TO CREATE YOURSELF:
-//    OurJourney/
-//    └── Memories/
-//        ├── memory1/   ← put Memory 1 photos here
-//        ├── memory2/
-//        ├── memory3/
-//        ... up to memory36/
+//  EXAMPLE with video:
+//  { title: "Our First Date ❤", message: "so fun!", photos: ["1.png"], videos: ["clip.mp4"] }
 // ═══════════════════════════════════════════════════════════════
 
 const memories = [
   {
     title:   "Our First Date ❤",
-    message: "Add your message here. 💕",
+    message: "A sweet, loving time. 💕",
     photos:  [
-"1.png", "2.png", "3.png"
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+    ],
+    videos:  [
+      "5.mp4",
     ]
   },
-  { title: "Memory 2",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 3",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 4",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 5",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 6",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 7",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 8",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 9",  message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 10", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 11", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 12", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 13", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 14", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 15", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 16", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 17", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 18", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 19", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 20", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 21", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 22", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 23", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 24", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 25", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 26", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 27", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 28", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 29", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 30", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 31", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 32", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 33", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 34", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 35", message: "Add your message here. 💕", photos: [] },
-  { title: "Memory 36", message: "Add your message here. 💕", photos: [] },
+  { title: "Drawing Date ❤",  message: "A fun, creative time. 💕", photos:  [    
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png"], videos: [] },
+  { title: "Memory 3",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 4",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 5",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 6",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 7",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 8",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 9",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 10", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 11", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 12", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 13", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 14", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 15", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 16", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 17", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 18", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 19", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 20", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 21", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 22", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 23", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 24", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 25", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 26", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 27", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 28", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 29", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 30", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 31", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 32", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 33", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 34", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 35", message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Memory 36", message: "Add your message here. 💕", photos: [], videos: [] },
 ];
 
 // Fortune cookie paper text
@@ -107,6 +113,28 @@ for (let i = 0; i < 36; i++) {
     </div>
   ` : '';
 
+  // Memory 2 decorative images
+  const memory2DecoHTML = (n === 2) ? `
+    <!-- Bottom right: earrings side by side -->
+    <div class="m2-deco-group m2-earrings">
+      <img src="Images/earringEula.png" class="m2-deco m2-earring-eula" alt="Earring Eula"/>
+      <img src="Images/earringIan.png"  class="m2-deco m2-earring-ian"  alt="Earring Ian"/>
+    </div>
+    <!-- Bottom left: popsicle and icecream side by side -->
+    <div class="m2-deco-group m2-treats">
+      <div class="treat-wrap">
+        <div class="treat-bubble" id="bubblePopsicle">STRAWBERRY CRISP</div>
+        <img src="Images/popsicle.png" class="m2-deco m2-popsicle" alt="Popsicle"
+             onclick="showTreatBubble('bubblePopsicle')"/>
+      </div>
+      <div class="treat-wrap">
+        <div class="treat-bubble" id="bubbleIcecream">I THINK THIS IS APPLE CRUMBLE</div>
+        <img src="Images/icecream.png" class="m2-deco m2-icecream" alt="Ice Cream"
+             onclick="showTreatBubble('bubbleIcecream')"/>
+      </div>
+    </div>
+  ` : '';
+
   const page = document.createElement('div');
   page.id        = `page-heart-${n}`;
   page.className = 'page';
@@ -137,6 +165,7 @@ for (let i = 0; i < 36; i++) {
 
     ${cookieHTML}
     ${characterHTML}
+    ${memory2DecoHTML}
   `;
 
   document.body.appendChild(page);
@@ -145,24 +174,65 @@ for (let i = 0; i < 36; i++) {
 // ── Gallery overlay ──
 function openGallery(memoryNumber) {
   const mem    = memories[memoryNumber - 1];
-  const photos = mem.photos;
-  const folder = `Memories/memory${memoryNumber}/`;
+  const photos = mem.photos  || [];
+  const videos = mem.videos  || [];
+  const folder = `Images/Memories/memory${memoryNumber}/`;
 
-  // Build photo tiles — show placeholder if no photos added yet
   let tilesHTML = '';
-  if (photos.length === 0) {
-    tilesHTML = `<p class="gallery-empty">No photos yet for this memory 💕<br/>Add images to:<br/><code>Memories/memory${memoryNumber}/</code><br/>then list them in journey.js</p>`;
-  } else {
-    tilesHTML = photos.map(filename => `
+
+  // ── Photo tiles ──
+  tilesHTML += photos.map(filename => {
+    const src = folder + filename;
+    return `
       <div class="gallery-tile">
-        <img src="${folder}${filename}" alt="${filename}" onclick="openLightbox('${folder}${filename}')"/>
-      </div>
-    `).join('');
+        <img src="${src}" alt="${filename}" onclick="openLightbox('${src}')"/>
+      </div>`;
+  }).join('');
+
+  // ── Video tiles — click to open popup player ──
+  tilesHTML += videos.map(filename => {
+    const src = folder + filename;
+    return `
+      <div class="gallery-tile gallery-tile--video" onclick="openVideoPopup('${src}', '${filename}')">
+        <div class="video-thumb-wrap">
+          <video src="${src}" preload="metadata" muted class="video-thumb"></video>
+          <div class="video-play-overlay">
+            <div class="video-play-circle">▶</div>
+          </div>
+          <p class="video-filename">${filename}</p>
+        </div>
+      </div>`;
+  }).join('');
+
+  if (tilesHTML === '') {
+    tilesHTML = `<p class="gallery-empty">No photos or videos yet 💕<br/>Add files to:<br/><code>Images/Memories/memory${memoryNumber}/</code><br/>then list them in journey.js</p>`;
   }
 
-  document.getElementById('galleryTitle').textContent = mem.title;
-  document.getElementById('galleryGrid').innerHTML = tilesHTML;
+  document.getElementById('galleryTitle').innerHTML = mem.title;
+  document.getElementById('galleryGrid').innerHTML  = tilesHTML;
   document.getElementById('galleryOverlay').classList.add('open');
+
+
+}
+
+// ── Video popup player ──
+function openVideoPopup(src, filename) {
+  const popup = document.getElementById('videoPopup');
+  const vid   = document.getElementById('popupVideo');
+  const title = document.getElementById('popupVideoTitle');
+
+  title.textContent = filename;
+  vid.src = src;
+  popup.classList.add('open');
+  vid.play();
+}
+
+function closeVideoPopup() {
+  const popup = document.getElementById('videoPopup');
+  const vid   = document.getElementById('popupVideo');
+  vid.pause();
+  vid.src = '';
+  popup.classList.remove('open');
 }
 
 function closeGallery() {
@@ -178,6 +248,24 @@ function openLightbox(src) {
 
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
+  const lbVid = document.getElementById('lightboxVid');
+  if (lbVid) { lbVid.pause(); lbVid.src = ''; }
+  document.getElementById('lightboxImg').style.display = '';
+}
+
+// ── Treat speech bubble (Memory 2) ──
+let bubbleTimer = null;
+function showTreatBubble(id) {
+  // Hide any open bubble first
+  document.querySelectorAll('.treat-bubble').forEach(b => b.classList.remove('visible'));
+  clearTimeout(bubbleTimer);
+
+  const bubble = document.getElementById(id);
+  if (!bubble) return;
+  bubble.classList.add('visible');
+
+  // Auto-hide after 2.5s
+  bubbleTimer = setTimeout(() => bubble.classList.remove('visible'), 2500);
 }
 
 // ── Body pendulum swing ──
@@ -214,4 +302,9 @@ function navigateTo(targetId) {
 // Close gallery when clicking the dark backdrop (not the modal itself)
 function handleOverlayClick(e) {
   if (e.target === document.getElementById("galleryOverlay")) closeGallery();
+}
+
+// Close video popup when clicking the dark backdrop
+function handleVideoPopupClick(e) {
+  if (e.target === document.getElementById('videoPopup')) closeVideoPopup();
 }
