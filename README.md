@@ -1,2 +1,0 @@
-# OurJourney
-Our Wonderful Journey
