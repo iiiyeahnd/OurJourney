@@ -31,9 +31,18 @@ const memories = [
       "2.png",
       "3.png",
       "4.png"], videos: [] },
-  { title: "Memory 3",  message: "Add your message here. 💕", photos: [], videos: [] },
-  { title: "Memory 4",  message: "Add your message here. 💕", photos: [], videos: [] },
-  { title: "Memory 5",  message: "Add your message here. 💕", photos: [], videos: [] },
+  { title: "Our Matchy",  message: "Matching together. 💕", photos: [
+        "1.png",
+        "2.png",
+        "3.png",
+  ], videos: [] },
+  { title: "Our Digital Love",  message: "No matter how far away. 💕", photos: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png"
+  ], videos: [] },
+  { title: "My Two Babies",  message: "Add your message here. 💕", photos: [], videos: [] },
   { title: "Memory 6",  message: "Add your message here. 💕", photos: [], videos: [] },
   { title: "Memory 7",  message: "Add your message here. 💕", photos: [], videos: [] },
   { title: "Memory 8",  message: "Add your message here. 💕", photos: [], videos: [] },
